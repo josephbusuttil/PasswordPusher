@@ -16,9 +16,9 @@ services:
     #
     # Uncomment the following lines to set environment variables and add your own.
      environment:
-        PWP__PW__EXPIRE_AFTER_DAYS_DEFAULT: "1"
-        PWP__PW__EXPIRE_AFTER_VIEWS_MIN: "1"
-        PWP__PW__RETRIEVAL_STEP_DEFAULT: "true"
+        #PWP__PW__EXPIRE_AFTER_DAYS_DEFAULT: "1"
+       # PWP__PW__EXPIRE_AFTER_VIEWS_MIN: "1"
+      #  PWP__PW__RETRIEVAL_STEP_DEFAULT: "true"
         # Branding 
         PWP__BRAND__LIGHT_LOGO: "https://assets.kogan.com/files/logos/LOGO_150x50_2.png"
         PWP__BRAND__DARK_LOGO: "https://assets.kogan.com/files/logos/LOGO_150x50_2.png"
