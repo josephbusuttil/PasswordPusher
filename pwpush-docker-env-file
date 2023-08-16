@@ -13,19 +13,30 @@
 # https://docs.docker.com/compose/environment-variables/env-file/
 #
 
-# PWP__ENABLE_LOGINS=true
+# Branding 
+PWP__BRAND__LIGHT_LOGO=https://assets.kogan.com/files/logos/LOGO_150x50_2.png
+PWP__BRAND__DARK_LOGO=https://assets.kogan.com/files/logos/LOGO_150x50_2.png
+PWP__BRAND__SHOW_FOOTER_MENU =false
+PWP__BRAND__TITLE=Kogan Passporter
+
+# Functionallity 
+PWP__ENABLE_LOGINS=true
+PWP__HOST_DOMAIN=localhost
+PWP__HOST_PROTOCOL=http
+#PWP__HOST_DOMAIN=passporter.corp.kogan.com.au
+#PWP__HOST_PROTOCOL=https
+
+# Mail 
 # PWP__MAIL__RAISE_DELIVERY_ERRORS=true
-# PWP__MAIL__SMTP_ADDRESS=
-# PWP__MAIL__SMTP_PORT=
-# PWP__MAIL__SMTP_USER_NAME=
-# PWP__MAIL__SMTP_PASSWORD=
-# PWP__MAIL__SMTP_AUTHENTICATION=plain
-# PWP__MAIL__SMTP_STARTTLS=true
+PWP__MAIL__SMTP_ADDRESS=mail.smtp2go.com
+PWP__MAIL__SMTP_PORT=2525
+PWP__MAIL__SMTP_USER_NAME=test@tegridyhosting.com
+PWP__MAIL__SMTP_PASSWORD=NyR4x34wChtBeylG
+PWP__MAIL__SMTP_AUTHENTICATION=plain
+PWP__MAIL__SMTP_STARTTLS=true
+PWP__MAIL__MAILER_SENDER=test@tegridyhosting.com
 # PWP__MAIL__OPEN_TIMEOUT=10
 # PWP__MAIL__READ_TIMEOUT=10
-# PWP__HOST_DOMAIN=
-# PWP__HOST_PROTOCOL=
-# PWP__MAIL__MAILER_SENDER="Sender Name" <email@address.111>
 # PWP__ENABLE_FILE_PUSHES=true
 # PWP__FILES__STORAGE=local
 # PWP__FILES__S3__ENDPOINT=
