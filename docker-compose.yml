@@ -15,7 +15,7 @@ services:
     # https://github.com/pglombardo/PasswordPusher/blob/master/Configuration.md
     #
     # Uncomment the following lines to set environment variables and add your own.
-     environment:
+    environment:
     #   PWP__PW__EXPIRE_AFTER_DAYS_DEFAULT: "1"
     #   PWP__PW__EXPIRE_AFTER_VIEWS_MIN: "1"
     #   PWP__PW__RETRIEVAL_STEP_DEFAULT: "true"
