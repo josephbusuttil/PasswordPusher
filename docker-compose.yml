@@ -20,11 +20,13 @@ services:
     #   PWP__PW__EXPIRE_AFTER_VIEWS_MIN: "1"
     #   PWP__PW__RETRIEVAL_STEP_DEFAULT: "true"
         # Branding 
-        PWP__BRAND__LIGHT_LOGO: "https://assets.kogan.com/files/logos/LOGO_150x50_2.png"
-        PWP__BRAND__DARK_LOGO: "https://assets.kogan.com/files/logos/LOGO_150x50_2.png"
+        PWP__BRAND__LIGHT_LOGO: "https://kgncorpwebstorage01.blob.core.windows.net/assets/Kogan_Logo_Stacked_PNG_Transparent.png"
+        PWP__BRAND__DARK_LOGO: "https://kgncorpwebstorage01.blob.core.windows.net/assets/Kogan_Logo_Stacked_PNG_Transparent_white.png"
         PWP__BRAND__SHOW_FOOTER_MENU: "false"
+        PWP__THEME: "simplex"
         PWP__BRAND__TITLE: "Kogan Passporter"
-
+        PWP_PRECOMPILE: "true"        
+        PWP__ALLOW_ANONYMOUS: "false"
         # Functionallity 
         PWP__ENABLE_LOGINS: "true"
         PWP__HOST_DOMAIN: "localhost"
@@ -34,13 +36,12 @@ services:
 
         # Mail 
         # PWP__MAIL__RAISE_DELIVERY_ERRORS=true
-        PWP__MAIL__SMTP_ADDRESS: "mail.smtp2go.com"
-        PWP__MAIL__SMTP_PORT: "2525"
-        PWP__MAIL__SMTP_USER_NAME: "test@tegridyhosting.com"
-        PWP__MAIL__SMTP_PASSWORD: "NyR4x34wChtBeylG"
-        PWP__MAIL__SMTP_AUTHENTICATION: "plain"
+        PWP__MAIL__SMTP_ADDRESS: "smtp.sendgrid.net"
+        PWP__MAIL__SMTP_PORT: "587"
+        PWP__MAIL__SMTP_USER_NAME: "apikey"
+        PWP__MAIL__SMTP_AUTHENTICATION: "login"
         PWP__MAIL__SMTP_STARTTLS: "true"
-        PWP__MAIL__MAILER_SENDER: "test@tegridyhosting.com"
+        PWP__MAIL__MAILER_SENDER: "noreply@email.kogan.com"
     
     #
     # Uncomment the following lines to mount a volume.
